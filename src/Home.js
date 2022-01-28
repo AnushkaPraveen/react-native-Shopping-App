@@ -3,6 +3,7 @@ import {View, Text, StyleSheet, Button, TextInput,Image,TouchableOpacity} from '
 import {useSelector, useDispatch} from 'react-redux';
 import {SetName} from './reducer';
 
+
 const Home = ({navigation}) => {
   const [text, setText] = useState('');
   const counter = useSelector(state => state.counter);
@@ -36,6 +37,7 @@ const Home = ({navigation}) => {
       <TouchableOpacity
         style={styles.button}
         onPress={handleButton}
+        disabled={!text?true:false}
         
       ><Text style={styles.buttonText}>Shopping</Text></TouchableOpacity>
     </View>

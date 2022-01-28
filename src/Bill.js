@@ -19,7 +19,7 @@ const Bill = () => {
     <View style={styles.card}>
 
     
-      <Text style={styles.mainTitle}>Here Your Bill ,{name}</Text>
+      <Text style={styles.mainTitle}>Here Your Bill , {name}</Text>
 
       {countA != 0 ? (
         <View style={styles.row}>
@@ -69,17 +69,18 @@ const styles = StyleSheet.create({
     textAlign:'center',
     fontSize:30,
     color:'#544c4c',
-    fontWeight:'bold'
+    fontWeight:'bold',
+    marginBottom:10
   },
   total:{
     fontSize:30,
-    fontWeight:'bold'
+    fontWeight:'bold',
   },
   price:{
     fontSize:25
   },
   card:{
-    height: 190,
+    height: 220,
     backgroundColor: 'white',
     borderRadius: 15,
     shadowColor: 'black',
